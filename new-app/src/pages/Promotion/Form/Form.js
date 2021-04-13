@@ -1,8 +1,15 @@
 import React from 'react';
-// import PagesPromotionSearch from '../Search/Search';
+import { useParams } from 'react-router-dom';
+import PromotionForm from 'components/Promotion/Form/Form';
+import UIContainer from 'components/UI/Container/Container';
 
-const PagesPromotionForm = () => (
-    <div>FORM</div>
-)
+const PagesPromotionForm = () => {
+    const { id } = useParams();
+    return (
+        <UIContainer>
+            <PromotionForm />
+        </UIContainer>
+    )
+}
 
 export default PagesPromotionForm;
