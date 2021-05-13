@@ -1,17 +1,13 @@
 import React from 'react';
 import PromotionSearch from 'components/Promotion/Search/Search';
-import UIConteiner from 'components/UI/Container/Container';
+import UIContainer from 'components/UI/Container/Container';
 
 const PagesPromotionSearch = () => {
-
-  
-
-
   return (
-    <UIConteiner>
+    <UIContainer>
       <PromotionSearch />
-    </UIConteiner>
-  )
-}
+    </UIContainer>
+  );
+};
 
 export default PagesPromotionSearch;
