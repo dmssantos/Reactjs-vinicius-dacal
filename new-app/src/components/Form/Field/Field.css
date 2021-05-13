@@ -5,9 +5,8 @@
   color: #555555;
 }
 
-
 .form-field__input {
-  border: 1px solid #AAAAAA;
+  border: 1px solid #aaaaaa;
   border-radius: 8px;
   background-color: #fff;
   height: 36px;

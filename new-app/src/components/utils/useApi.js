@@ -39,6 +39,7 @@ export default function useApi(config) {
 
     try {
       response = await fn(finalConfig);
+      console.log(response.headers);
       const newRequestInfo = {
         ...initialRequestInfo,
         data: response.data,
