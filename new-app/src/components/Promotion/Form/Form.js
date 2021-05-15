@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
-import useApi from 'components/utils/useApi';
-import Field from 'components/Form/Field/Field';
 import { Formik, Form } from 'formik';
 import UIButton from 'components/UI/Button/Button';
+import useApi from 'components/utils/useApi';
+import Field from 'components/Form/Field/Field';
 import schema from './schema';
 import './Form.css';
 
@@ -73,7 +73,9 @@ const PromotionForm = ({ id }) => {
                 <Field name="price" type="number" label="Preço" />
               </div>
               <div>
-                <UIButton component="button" type="submit">Salvar</UIButton>
+                <UIButton component="button" type="submit">
+                  Salvar
+                </UIButton>
               </div>
             </Form>
           )}

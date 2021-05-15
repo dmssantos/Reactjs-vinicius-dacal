@@ -1,7 +1,7 @@
 import React from 'react';
 import './Button.css';
 
-const UIButton = ({ 
+const UIButton = ({
   children,
   className,
   component: Component,
@@ -9,16 +9,19 @@ const UIButton = ({
   ...restProps
 }) => {
   return (
-    <Component className={`ui-button ui-button--${theme} ${className}`} {...restProps}>
+    <Component
+      className={`ui-button ui-button--${theme} ${className}`}
+      {...restProps}
+    >
       {children}
     </Component>
-  )
-}
+  );
+};
 
 UIButton.defaultProps = {
   component: 'a',
   className: '',
-  theme: 'bordered-blue'
-}
+  theme: 'bordered-blue',
+};
 
 export default UIButton;
