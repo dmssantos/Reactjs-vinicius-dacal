@@ -23,6 +23,7 @@ const PromotionForm = ({ id }) => {
 
   const [save, saveInfo] = useApi({
     url: id ? `/promotions/${id}` : '/promotions',
+    // eslint-disable-next-line
     method: id ? 'put' : 'post',
     onCompleted: (response) => {
       if (!response.error) {
